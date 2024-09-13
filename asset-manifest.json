@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f0ddb2c6.css",
+    "main.js": "/static/js/main.938ed9a5.js",
+    "static/media/UX.jpg": "/static/media/UX.ef6b2f74a7bcbd482d68.jpg",
+    "static/media/Data.webp": "/static/media/Data.6fc737b5d37c611ab8e7.webp",
+    "static/media/Consulting.jpg": "/static/media/Consulting.b239145eb0d9c8f22620.jpg",
+    "static/media/Conback.jpg": "/static/media/Conback.a1d61c4b4fe5ee5954ba.jpg",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/Web.jpg": "/static/media/Web.d6decbcab224e7c40290.jpg",
+    "static/media/lbc.svg": "/static/media/lbc.6e81b703b1b76b6f211492ec6f6bcd71.svg",
+    "static/media/Botback.jpg": "/static/media/Botback.9ac3d0285081a06afc78.jpg",
+    "static/media/Bot.jpg": "/static/media/Bot.830029d3aa5d3f4910a8.jpg",
+    "static/media/Databack.webp": "/static/media/Databack.11b1e836792130e21d36.webp",
+    "static/media/Webback.avif": "/static/media/Webback.241e43293db5bc8ff591.avif",
+    "static/media/API.jfif": "/static/media/API.7931c6e946947be0f272.jfif",
+    "static/media/UI.jpg": "/static/media/UI.6835f018ffb0b7d3e0cc.jpg",
+    "static/media/API.webp": "/static/media/API.80ac647869b15cd06b8c.webp",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/index.html",
+    "main.f0ddb2c6.css.map": "/static/css/main.f0ddb2c6.css.map",
+    "main.938ed9a5.js.map": "/static/js/main.938ed9a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0ddb2c6.css",
+    "static/js/main.938ed9a5.js"
+  ]
+}
