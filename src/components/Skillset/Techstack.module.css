@@ -1,0 +1,95 @@
+.techstackContainer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.techCategories {
+  margin-bottom: 50px;
+}
+
+.techCategories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rowStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* уменьшили промежуток */
+}
+
+.techCard {
+  position: relative;
+  width: 150px; /* уменьшили размеры карточек */
+  height: 150px;
+  perspective: 1000px;
+  margin: 10px; /* уменьшили промежуток */
+}
+
+.techInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.techCard:hover .techInner {
+  transform: rotateY(180deg);
+}
+
+.techFront,
+.techBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.techFront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  border: 2px solid #282c34;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.techBack {
+  background-color: #282c34;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.techIcon {
+  font-size: 2.5rem; /* уменьшили размер иконок */
+  transition: color 0.3s;
+}
+
+.techIcon:hover {
+  color: #9b59b6;
+}
+
+.techTitle {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.techDescription {
+  font-size: 0.9rem;
+}

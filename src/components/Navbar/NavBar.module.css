@@ -1,0 +1,36 @@
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+  }
+  
+  .sticky {
+    background-color: #00000017;
+    transition: background-color 0.5s ease;
+  }
+  
+  .logo {
+    max-height: 40px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff8c00;
+  }
+  
+  .navbar-toggler-icon span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-toggler-icon span:last-child {
+    margin-bottom: 0;
+  }

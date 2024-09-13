@@ -1,0 +1,30 @@
+.projectSection {
+  padding: 100px 0;
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+
+.projectSubtitle {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  margin-bottom: 50px;
+}
+
+.projectRow {
+  justify-content: center;
+}
+
+.projectCol {
+  margin-bottom: 30px;
+}
+
+.purple {
+  color: #a855f7;
+}
