@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/repository/static/css/main.559c7105.css",
-    "main.js": "/repository/static/js/main.8e50d8aa.js",
-    "static/media/UX.jpg": "/repository/static/media/UX.ef6b2f74a7bcbd482d68.jpg",
-    "static/media/Data.webp": "/repository/static/media/Data.6fc737b5d37c611ab8e7.webp",
-    "static/media/Consulting.jpg": "/repository/static/media/Consulting.b239145eb0d9c8f22620.jpg",
-    "static/media/Conback.jpg": "/repository/static/media/Conback.a1d61c4b4fe5ee5954ba.jpg",
-    "static/media/home-main.svg": "/repository/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
-    "static/media/about.png": "/repository/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/Web.jpg": "/repository/static/media/Web.d6decbcab224e7c40290.jpg",
-    "static/media/lbc.svg": "/repository/static/media/lbc.6e81b703b1b76b6f211492ec6f6bcd71.svg",
-    "static/media/Botback.jpg": "/repository/static/media/Botback.9ac3d0285081a06afc78.jpg",
-    "static/media/Bot.jpg": "/repository/static/media/Bot.830029d3aa5d3f4910a8.jpg",
-    "static/media/Databack.webp": "/repository/static/media/Databack.11b1e836792130e21d36.webp",
-    "static/media/Webback.avif": "/repository/static/media/Webback.241e43293db5bc8ff591.avif",
-    "static/media/API.jfif": "/repository/static/media/API.7931c6e946947be0f272.jfif",
-    "static/media/UI.jpg": "/repository/static/media/UI.6835f018ffb0b7d3e0cc.jpg",
-    "static/media/API.webp": "/repository/static/media/API.80ac647869b15cd06b8c.webp",
-    "static/media/pre.svg": "/repository/static/media/pre.d4812f51c8c80976eaab.svg",
-    "index.html": "/repository/index.html",
-    "main.559c7105.css.map": "/repository/static/css/main.559c7105.css.map",
-    "main.8e50d8aa.js.map": "/repository/static/js/main.8e50d8aa.js.map"
+    "main.css": "/Sitelab/static/css/main.211b8afe.css",
+    "main.js": "/Sitelab/static/js/main.abbe7b15.js",
+    "static/media/UX.jpg": "/Sitelab/static/media/UX.ef6b2f74a7bcbd482d68.jpg",
+    "static/media/Data.webp": "/Sitelab/static/media/Data.6fc737b5d37c611ab8e7.webp",
+    "static/media/Consulting.jpg": "/Sitelab/static/media/Consulting.b239145eb0d9c8f22620.jpg",
+    "static/media/Conback.jpg": "/Sitelab/static/media/Conback.a1d61c4b4fe5ee5954ba.jpg",
+    "static/media/home-main.svg": "/Sitelab/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/Sitelab/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/Web.jpg": "/Sitelab/static/media/Web.d6decbcab224e7c40290.jpg",
+    "static/media/lbc.svg": "/Sitelab/static/media/lbc.6e81b703b1b76b6f211492ec6f6bcd71.svg",
+    "static/media/Botback.jpg": "/Sitelab/static/media/Botback.9ac3d0285081a06afc78.jpg",
+    "static/media/Bot.jpg": "/Sitelab/static/media/Bot.830029d3aa5d3f4910a8.jpg",
+    "static/media/Databack.webp": "/Sitelab/static/media/Databack.11b1e836792130e21d36.webp",
+    "static/media/Webback.avif": "/Sitelab/static/media/Webback.241e43293db5bc8ff591.avif",
+    "static/media/API.jfif": "/Sitelab/static/media/API.7931c6e946947be0f272.jfif",
+    "static/media/UI.jpg": "/Sitelab/static/media/UI.6835f018ffb0b7d3e0cc.jpg",
+    "static/media/API.webp": "/Sitelab/static/media/API.80ac647869b15cd06b8c.webp",
+    "static/media/pre.svg": "/Sitelab/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/Sitelab/index.html",
+    "main.211b8afe.css.map": "/Sitelab/static/css/main.211b8afe.css.map",
+    "main.abbe7b15.js.map": "/Sitelab/static/js/main.abbe7b15.js.map"
   },
   "entrypoints": [
-    "static/css/main.559c7105.css",
-    "static/js/main.8e50d8aa.js"
+    "static/css/main.211b8afe.css",
+    "static/js/main.abbe7b15.js"
   ]
 }
