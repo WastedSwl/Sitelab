@@ -1,0 +1,106 @@
+.companiesTestimonialsSection {
+  background-color: #1c1f3a2e;
+  padding: 100px 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 2.8em;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+
+.sectionSubtitle {
+  font-size: 1.4em;
+  color: #ffffff;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+
+.companySlider {
+  margin-top: 20px;
+}
+
+.companyLogo {
+  position: relative;
+  text-align: center;
+  margin: 0 15px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.companyLogo:hover {
+  transform: scale(1.1);
+}
+
+.companyLogo img {
+  max-height: 200px;
+  width: 60%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyLogo:hover .overlay {
+  opacity: 1;
+}
+
+.companyName {
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.testimonialCard {
+  background: linear-gradient(135deg, #1c1f3a, #29365f);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+  color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease-in-out;
+}
+
+.testimonialCard blockquote {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #f39c12;
+  font-style: italic;
+}
+
+.testimonialCard p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.leaveReviewButton {
+  background-color: #f39c12;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.leaveReviewButton:hover {
+  background-color: #ffffff;
+  color: #f39c12;
+}
