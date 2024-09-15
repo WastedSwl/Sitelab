@@ -1,55 +1,78 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Particle from "../Particle";
 import Slider from "react-slick";
+import Particle from "../Particle";
 import styles from "./CompaniesAndTestimonials.module.css";
-import companyLogo1 from "../../assets/Bot.jpg";
-import companyLogo2 from "../../assets/Bot.jpg";
-import companyLogo3 from "../../assets/Bot.jpg";
+import companyLogo1 from "../../assets/Hoffman.jpg";
+import companyLogo2 from "../../assets/warsaw.jpg";
+import companyLogo3 from "../../assets/autohouse.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CarModel from './car';
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root');
 
 const CompaniesAndTestimonials = () => {
-  // Настройки для слайдера компаний
+  const [modalIsOpen, setModalIsOpen] = useState(false); // Управление состоянием модального окна
+  const sliderRef = useRef(null);
+
   const companySliderSettings = {
     dots: false,
     infinite: true,
-    speed: 2000, // Плавная анимация
+    speed: 4000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false, 
-    autoplay: true, // Включаем автопрокрутку
-    autoplaySpeed: 5000, // Медленная автопрокрутка (5 секунд на каждый слайд)
-    pauseOnHover: true, // Останавливать карусель при наведении мыши
-    swipeToSlide: true, // Возможность свайпа
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
-  // Настройки для слайдера отзывов
   const testimonialSliderSettings = {
     dots: true,
     infinite: true,
-    speed: 800, // Более плавная анимация
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Оставляем только точки навигации
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
+  };
+
+  const handleMouseEnter = () => {
+    sliderRef.current.slickPause();
+  };
+
+  const handleMouseLeave = () => {
+    sliderRef.current.slickPlay();
+  };
+
+  const openModal = () => {
+    console.log("Modal open button clicked");
+    setModalIsOpen(true); // Открытие модального окна
+  };
+
+  const closeModal = () => {
+    console.log("Modal close button clicked");
+    setModalIsOpen(false); // Закрытие модального окна
   };
 
   return (
@@ -63,40 +86,53 @@ const CompaniesAndTestimonials = () => {
               Partners and Clients We Trust
             </h2>
             <p className={styles.sectionSubtitle}>
-              We’ve had the pleasure of collaborating with innovative and industry-leading companies.
+              We’ve had the pleasure of collaborating with innovative and
+              industry-leading companies.
             </p>
           </Col>
         </Row>
 
         <Row className="justify-content-center">
-          <Slider {...companySliderSettings} className={styles.companySlider}>
-            <div className={styles.companyLogo}>
+          <Slider
+            {...companySliderSettings}
+            className={styles.companySlider}
+            ref={sliderRef}
+          >
+            <div
+              className={styles.companyLogo}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <img src={companyLogo1} alt="Company 1" className="img-fluid" />
               <div className={styles.overlay}>
-                <div className={styles.companyName}>Innovate Inc.</div>
+                <div className={`${styles.companyName} ${styles.blackText}`}>
+                  Autohaus Hoffmann
+                </div>
               </div>
             </div>
-            <div className={styles.companyLogo}>
+            <div
+              className={styles.companyLogo}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <img src={companyLogo2} alt="Company 2" className="img-fluid" />
               <div className={styles.overlay}>
-                <div className={styles.companyName}>TechSphere</div>
+                <div className={styles.companyName}>Warsztat Auto</div>
               </div>
             </div>
-            <div className={styles.companyLogo}>
+            <div
+              className={styles.companyLogo}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <img src={companyLogo3} alt="Company 3" className="img-fluid" />
               <div className={styles.overlay}>
-                <div className={styles.companyName}>Future Solutions</div>
+                <div className={styles.companyName}>
+                  Autohaus Krebs Dresden
+                </div>
               </div>
             </div>
           </Slider>
-        </Row>
-
-        {/* Раздел с отзывами */}
-        <Row>
-          <Col md={12} className="text-center">
-            <p className={styles.sectionSubtitle}>
-            </p>
-          </Col>
         </Row>
 
         <Row>
@@ -108,37 +144,50 @@ const CompaniesAndTestimonials = () => {
           </Col>
         </Row>
 
-        {/* Статичные отзывы */}
         <Row className="justify-content-center">
-          <Col md={4} className={styles.testimonialCard}>
+          <Col md={4} className={`${styles.testimonialCard} ${styles.fadeIn}`}>
             <blockquote>
-              "Working with this team was a game-changer for our business. Their solutions are both cutting-edge and practical."
+              "Working with Sitelab exceeded all our expectations. Their automation solutions significantly reduced our operational time."
             </blockquote>
-            <p>- John Doe, CEO of Innovate Inc.</p>
+            <p>- Stefan Müller, Fleet Manager</p>
           </Col>
-          <Col md={4} className={styles.testimonialCard}>
+          <Col md={4} className={`${styles.testimonialCard} ${styles.fadeIn}`}>
             <blockquote>
-              "Their professionalism and expertise helped us to transform our approach to AI and web development."
+              "Sitelab's IT expertise helped us revamp our internal systems. We now have a more efficient workflow and seamless communication across departments."
             </blockquote>
-            <p>- Jane Smith, CTO of TechSphere</p>
+            <p>- Piotr Nowak, Business Owner</p>
           </Col>
-          <Col md={4} className={styles.testimonialCard}>
+          <Col md={4} className={`${styles.testimonialCard} ${styles.fadeIn}`}>
             <blockquote>
-              "Highly recommend their team for any business looking to elevate its digital presence."
+              "The team at Sitelab delivered a custom solution that transformed our online presence. Our sales have improved, and customer engagement has doubled."
             </blockquote>
-            <p>- Mike Johnson, Founder of Future Solutions</p>
+            <p>- Hans Schreiber, Sales Executive</p>
           </Col>
         </Row>
 
-        {/* Кнопка оставить отзыв */}
-        <Row className="text-center">
-          <Col>
-            <Button className={styles.leaveReviewButton} onClick={() => alert('Opening review form...')}>
-              Leave a Review
-            </Button>
+        {/* 3D Model Section */}
+        {/* <Row className="justify-content-center">
+          <Col md={12} className="text-center">
+            <h2 className={styles.sectionTitle}>Explore Our 3D Car Model</h2>
+            <div className={styles.carModelContainer}>
+              <CarModel />
+           
+            </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
+
+      {/* Modal for Car Model */}
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="3D Car Model"
+        className={styles.modal}
+        overlayClassName={styles.overlay}
+      >
+        <button onClick={closeModal} className={styles.closeButton}>Close</button>
+        <CarModel />
+      </Modal>
     </section>
   );
 };

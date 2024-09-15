@@ -1,0 +1,93 @@
+.project-section {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.yellow {
+    color: #f9c74f;
+}
+
+.project-card {
+    background-color: transparent; /* Убираем белый фон */
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Легкий прозрачный бордер */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: glow 3s infinite; /* Анимация свечения */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(249, 199, 79, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(249, 199, 79, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(249, 199, 79, 0.5);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.project-card-description {
+    font-size: 1rem;
+    color: #d1d1d1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .project-heading {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        margin-bottom: 20px;
+    }
+}

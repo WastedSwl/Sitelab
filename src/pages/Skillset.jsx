@@ -13,7 +13,6 @@ const Skillset = () => {
           Our <strong className="yellow">Skillset </strong>
         </h1>
         <Techstack />
-
       </Container>
     </Container>
   )

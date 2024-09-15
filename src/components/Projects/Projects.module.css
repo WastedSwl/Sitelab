@@ -1,30 +1,70 @@
-.projectSection {
-  padding: 100px 0;
-  background-color: #1a1a2e;
-  color: white;
+.projectCardView {
+  background-color: transparent !important; /* Убираем белый фон */
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Легкий прозрачный бордер */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: glow 3s infinite; /* Анимация свечения */
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px rgba(249, 199, 79, 0.5);
+  }
+  50% {
+      box-shadow: 0 0 20px rgba(249, 199, 79, 1);
+  }
+  100% {
+      box-shadow: 0 0 5px rgba(249, 199, 79, 0.5);
+  }
+}
+
+.projectCardView:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.projectCardView:hover .cardImg {
+  transform: scale(1.05);
+}
+
+.cardBody {
   text-align: center;
 }
 
-.projectTitle {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #f39c12;
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
 }
 
-.projectSubtitle {
-  font-size: 1.2em;
-  color: #e0e0e0;
-  margin-bottom: 50px;
+.cardText {
+  font-size: 1rem;
+  color: #d1d1d1;
+  margin-top: 10px;
 }
 
-.projectRow {
-  justify-content: center;
+.button {
+  background-color: #f9c74f;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.projectCol {
-  margin-bottom: 30px;
+.button:hover {
+  background-color: #eebc50;
 }
 
-.purple {
-  color: #a855f7;
+.buttonMarginTop {
+  margin-top: 10px;
 }

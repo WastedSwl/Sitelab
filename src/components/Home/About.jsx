@@ -2,12 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+
 import styles from "./About.module.css";
 
 const About = () => {
@@ -33,46 +28,7 @@ const About = () => {
                 </Tilt>
               </Col>
             </Row>
-            <Row>
-              <Col md={12} className={styles.homeAboutSocial}>
-                <h1>Connect with us</h1>
-                <ul className={styles.homeAboutSocialLinks}>
-                  <li className={styles.socialIcons}>
-                    <a
-                      href="https://github.com/SitelabTeam"
-                      target="_blank"
-                      rel="noreferrer"
-                      className={styles.homeSocialIcons}
-                      aria-label="github"
-                    >
-                      <AiFillGithub />
-                    </a>
-                  </li>
-                  <li className={styles.socialIcons}>
-                    <a
-                      href="https://www.linkedin.com/company/sitelab"
-                      target="_blank"
-                      rel="noreferrer"
-                      className={styles.homeSocialIcons}
-                      aria-label="linkedin"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li className={styles.socialIcons}>
-                    <a
-                      href="https://leetcode.com/sitelab"
-                      target="_blank"
-                      rel="noreferrer"
-                      className={styles.homeSocialIcons}
-                      aria-label="leetcode"
-                    >
-                      <SiLeetcode />
-                    </a>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
+            
           </Container>
         </Container>
     );
